@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">StockQuote_Mainar</string>
+    <string name="enter_sym">Enter stock symbol: </string>
+    <string name="sym_text">Symbol: </string>
+    <string name="name_text">Name: </string>
+    <string name="lastPr_text">Last Trade Price: </string>
+    <string name="lastTi_text">Last Trade Time: </string>
+    <string name="change_text">Change: </string>
+    <string name="range_text">52 Week Range: </string>
 </resources>
