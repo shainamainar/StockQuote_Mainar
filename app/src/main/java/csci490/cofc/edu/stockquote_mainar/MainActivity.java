@@ -1,5 +1,8 @@
 package csci490.cofc.edu.stockquote_mainar;
 
+import android.app.SearchManager;
+import android.content.Intent;
+import android.provider.SearchRecentSuggestions;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
         lastTi = this.findViewById(R.id.lastTime);
         change = this.findViewById(R.id.change);
         range = this.findViewById(R.id.range);
+        Intent intent  = getIntent();
+
+        if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
+            String query = intent.getStringExtra(SearchManager.QUERY);
+            SearchRecentSuggestions suggestions = new SearchRecentSuggestions(this,
+                    MySuggestionsProvider.AUTHORITY, MySuggestionsProvider.MODE);
+            suggestions.saveRecentQuery(query, null);
+        }
 
     }
     private View.OnKeyListener mKeyListener = new View.OnKeyListener() {
