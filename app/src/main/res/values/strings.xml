@@ -7,4 +7,5 @@
     <string name="lastTi_text">Last Trade Time: </string>
     <string name="change_text">Change: </string>
     <string name="range_text">52 Week Range: </string>
+    <string name="hint">ex: GOOG</string>
 </resources>

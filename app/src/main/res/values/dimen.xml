@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="text_align">30dp</dimen>
+    <dimen name="input_align">30dp</dimen>
     <dimen name="input_field">200dp</dimen>
     <dimen name="ver_dimen">10dp</dimen>
+    <dimen name="left_margin">5dp</dimen>
 </resources>

@@ -17,11 +17,13 @@
             android:gravity="center"
             android:text="@string/enter_sym"
             android:layout_marginVertical="@dimen/ver_dimen"
-            android:layout_marginLeft="@dimen/text_align"/>
+            android:layout_marginLeft="@dimen/input_align"/>
         <EditText
             android:layout_width="@dimen/input_field"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/ver_dimen" />
+            android:layout_marginVertical="@dimen/ver_dimen"
+            android:id="@+id/edit_text"
+            android:hint="@string/hint"/>
 
     </LinearLayout>
     <LinearLayout
@@ -33,12 +35,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sym_text"
-            android:layout_marginHorizontal="@dimen/text_align"
+            android:layout_marginLeft="@dimen/text_align"
             android:layout_marginVertical="@dimen/ver_dimen"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/symbol"
+            android:layout_marginLeft="@dimen/left_margin"
             android:layout_marginVertical="@dimen/ver_dimen"/>
 
     </LinearLayout>
@@ -51,10 +54,11 @@
             android:layout_height="wrap_content"
             android:text="@string/name_text"
             android:layout_marginVertical="@dimen/ver_dimen"
-            android:layout_marginHorizontal="@dimen/text_align"/>
+            android:layout_marginLeft="@dimen/text_align"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
             android:layout_marginVertical="@dimen/ver_dimen"
             android:id="@+id/name"/>
 
@@ -68,10 +72,12 @@
             android:layout_height="wrap_content"
             android:text="@string/lastPr_text"
             android:layout_marginVertical="@dimen/ver_dimen"
-            android:layout_marginHorizontal="@dimen/text_align"/>
+            android:layout_marginLeft="@dimen/text_align"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
             android:layout_marginVertical="@dimen/ver_dimen"
             android:id="@+id/lastPrice"/>
 
@@ -84,11 +90,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lastTi_text"
-            android:layout_marginHorizontal="@dimen/text_align"
+            android:layout_marginLeft="@dimen/text_align"
             android:layout_marginVertical="@dimen/ver_dimen"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
             android:layout_marginVertical="@dimen/ver_dimen"
             android:id="@+id/lastTime"/>
 
@@ -101,12 +108,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/change_text"
-            android:layout_marginHorizontal="@dimen/text_align"
+            android:layout_marginLeft="@dimen/text_align"
             android:layout_marginVertical="@dimen/ver_dimen"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/change"
+            android:layout_marginLeft="@dimen/left_margin"
             android:layout_marginVertical="@dimen/ver_dimen"/>
     </LinearLayout>
     <LinearLayout
@@ -117,12 +125,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/range_text"
-            android:layout_marginHorizontal="@dimen/text_align"
+            android:layout_marginLeft="@dimen/text_align"
             android:layout_marginVertical="@dimen/ver_dimen"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/range"
+            android:layout_marginLeft="@dimen/left_margin"
             android:layout_marginVertical="@dimen/ver_dimen"/>
     </LinearLayout>
 
